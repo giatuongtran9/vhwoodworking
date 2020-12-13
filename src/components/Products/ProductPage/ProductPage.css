@@ -1,0 +1,26 @@
+.productpage-container {
+    background-image: url('../../../image/background-01.png');
+    height: auto;
+    position: absolute;
+    width: 100%;
+}
+
+.product-name {
+    background-color: #2C1405;
+    opacity: 40%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.productname {
+    color: white;
+    font-size: 3rem;
+    font-family: serif;
+}
+
+.product-link {
+    color: black;
+}

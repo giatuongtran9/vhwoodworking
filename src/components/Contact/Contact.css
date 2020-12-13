@@ -1,0 +1,50 @@
+.contact-container {
+    background-image: url('../../image/background-01.png');
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.contact1 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-h1 {
+    font-size: 6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.contact-list {
+    width: 60%;
+}
+
+.contact2 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact2-img {
+    padding: 10%;
+}
+
+
+.contact3 {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,24 @@
+.navitem-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav {
+    width: 100%;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: cursive;
+}
+
+a:hover {
+    background-color: #FFB932;
+    border-radius: 25px;
+}
+
+
+

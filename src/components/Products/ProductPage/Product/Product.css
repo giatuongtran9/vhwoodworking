@@ -1,0 +1,33 @@
+.product-container {
+    display: flex;
+
+    position: relative;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.product-h2 {
+    width: 100%;
+}
+
+.p-container {
+    margin-top: 5%;
+    
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.p1-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.product-img {
+    height: 300px;
+    width: 200px;
+}
+

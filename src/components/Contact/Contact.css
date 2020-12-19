@@ -50,3 +50,13 @@ li {
     align-items: center;
 
 }
+
+@media only screen and (min-width: 992px) {
+    li {
+        font-size: 1rem;
+    }
+
+    .contact-h1 {
+        font-size: 5rem;
+    }
+}

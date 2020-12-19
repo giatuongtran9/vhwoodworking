@@ -1,13 +1,14 @@
 .home-container {
     background-image: url('../../image/background-01.png');
     height: auto;
+    min-height: 100vh;
     width: 100vw;
-    z-index: -1;
+    z-index: -10;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
 }
 
@@ -18,20 +19,23 @@ img {
 }
 
 .home-upper {
+    float: left;
     position: relative;
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 30vh;
+    width: 50%;
     border-bottom: 1px solid black;
+    margin-top: 10vh;
+
 }
 
 .home-lower {
-    width: 100%;
+    float: left;
+    width: 50%;
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 15vh;
+    margin-right: 2%;
 }
 
 

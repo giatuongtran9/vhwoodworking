@@ -15,14 +15,14 @@ const NavItem = () => {
 
         <div className="navitem-container">
             <div>Logo</div>
-            <Link to="/">Home</Link>
-            <Link to="/About">About Us</Link>
-            <a href="#" 
+            <Link className="a1" to="/">Home</Link>
+            <Link className="a1" to="/About">About Us</Link>
+            <a className="a1" href="#" 
                 onMouseEnter={() => setShow(true)}
                 onMouseLeave={() => setShow(false)}>
                     Products
             </a>
-            <Link to="/Contact">Contact Us</Link>
+            <Link className="a1" to="/Contact">Contact Us</Link>
         </div>
         {show ? (<Products isShow={setShow}/>) : null}
         </div>

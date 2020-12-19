@@ -1,7 +1,7 @@
 .slideImg {
-    object-fit: fill;
-    height: 50vh;
-    width: 40vw;
+    height: 100%;
+    width: 100%;
+    border: 10px solid #2C1405;
 }
 
 .slider {
@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     top: 40%;
+    border-radius: 30%;
 
 }
 

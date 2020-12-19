@@ -2,7 +2,6 @@
     display: flex;
 
     position: relative;
-    margin-top: 5%;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -14,7 +13,6 @@
 
 .p-container {
     margin-top: 5%;
-    
     flex-flow: row wrap;
     display: flex;
     justify-content: center;
@@ -26,6 +24,10 @@
     padding: 0 10px;
 }
 
+h5, h4, img {
+    margin: 0;
+}
+
 .p2-container {
     height: 1000px;
     width: 1000px;
@@ -34,6 +36,25 @@
 .product-img {
     height: 300px;
     width: 200px;
+}
+
+.productImg {
+    width: 200px;
+    position: relative;
+    padding: 10px;
+}
+
+.p1 {
+    position: relative;
+    display: flex;
+}
+
+.p2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,11 +1,13 @@
 import React from 'react'
 
 import './ProductPage.css'
+import { Link } from 'react-router-dom'
 
 import Product from './Product/Product'
 import Nav from '../../Nav/Nav'
 
 const ProductPage = (props) => {
+
 
     const a = props.match.params
     console.log(a)
@@ -16,15 +18,15 @@ const ProductPage = (props) => {
                 <h2 className="productname">{a.productName ? a.productName : a.type}</h2>
             </div>
             <div>
-                <a className="product-link" href="#">Home</a>
+                <Link className="product-link" to='/'>Home</Link>
                 |
-                <a className="product-link" href="#">Products</a>
+                <Link className="product-link" href="#">Products</Link>
                 |
-                <a className="product-link" href="#">{a.type}</a>
+                <Link className="product-link" to={`/product/${a.type}`}>{a.type}</Link>
                 |
-                <a className="product-link" href="#">{a.productName}</a>
+                <Link className="product-link" to={`/product/${a.type}/${a.productName}`}>{a.productName}</Link>
             </div> 
-            <Product productName={a}/>
+            <Product productName={a.productName ? a.productName : a.type} check={a.productName ? true : false}/>
         </div>
     )
 }

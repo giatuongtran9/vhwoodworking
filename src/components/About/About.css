@@ -70,22 +70,23 @@ p {
     padding-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 15px;
 }
 
 .image2 {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     height: 300px;
     width: 300px;
 }
 
 .block2 {
-    position: absolute;
+    position: relative;
     background-color: #2E0C00;
-    width: 40%;
-    height: 20%;
-    top: 40%;
+    width: 100%;
+    height: 30%;
+    top: 20%;
 }
 
 .about-img {
@@ -97,6 +98,17 @@ p {
     right: 10%;
 }
 
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    
+}
 
 @media only screen and (max-width: 600px) {
     .image2 {

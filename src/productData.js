@@ -255,6 +255,98 @@ import tce8003 from './productImage/tce8003.jpg'
 import tce9001 from './productImage/tce9001.jpg'
 import tce9002 from './productImage/tce9002.jpg'
 
+import Abracadabra from './productImage/Abracadabra.png'
+import Almond from './productImage/Almond.png'
+import AmberWood from './productImage/AmberWood.png'
+import AntiqueWhite from './productImage/AntiqueWhite.png'
+import BlackAsh from './productImage/BlackAsh.png'
+import Black from './productImage/Black.png'
+import CandleLight from './productImage/Candle-light.png'
+import CarmelCherry from './productImage/Carmel-Cherry.png'
+import CayenneMaple from './productImage/Cayenne-Maple.png'
+import CeleryGloss from './productImage/Celery-Gloss.png'
+import CherryPortuna from './productImage/Cherry-Portuna.png'
+import ChocoCherry from './productImage/Choco-Cherry.png'
+import ChocolatePear from './productImage/Chocolate-Pear.png'
+import CopaCabana from './productImage/Copa-Cabana.png'
+import CristalWhite from './productImage/Cristal-White.png'
+import DarkCherry from './productImage/Dark-Cherry.png'
+import DarkItalianWalnut from './productImage/DarkItalianWalnut.png'
+import DoveGrey from './productImage/DoveGrey.png'
+import GreyPortuna from './productImage/GreyPortuna.png'
+import HardRockMaple from './productImage/HardRockMaple.png'
+import HighGlossAntiqueWhite from './productImage/HighGlossAntiqueWhite.png'
+import HighGlossBirdseye from './productImage/HighGlossBirdseye.png'
+import HighGlossBlack from './productImage/HighGlossBlack.png'
+import JavaGlow from './productImage/JavaGlow.png'
+import LightBirdseye from './productImage/LightBirdseye.png'
+import LightZebranoGloss from './productImage/LightZebranoGloss.png'
+import MacassarEbony from './productImage/MacassarEbony.png'
+import MaliWenge from './productImage/MaliWenge.png'
+import MediumBirdseye from './productImage/MediumBirdseye.png'
+import MetallicCharcoal from './productImage/MetallicCharcoal.png'
+import MidnightGloss from './productImage/MidnightGloss.png'
+import MochaGloss from './productImage/MochaGloss.png'
+import MovinguiGloss from './productImage/MovinguiGloss.png'
+import NaturalCherry from './productImage/NaturalCherry.png'
+import NaturalMaple from './productImage/NaturalMaple.png'
+import Nutmeg from './productImage/Nutmeg.png'
+import OrangeGloss from './productImage/OrangeGloss.png'
+import OysterGrey from './productImage/OysterGrey.png'
+import PalePalisander from './productImage/PalePalisander.png'
+import PeacanWalnut from './productImage/PeacanWalnut.png'
+import Pearwood from './productImage/Pearwood.png'
+import PickledOak from './productImage/PickledOak.png'
+import PortMaple from './productImage/PortMaple.png'
+import Pumice from './productImage/Pumice.png'
+import RedGloss from './productImage/RedGloss.png'
+import RiverCherry from './productImage/RiverCherry.png'
+import RosewoodGloss from './productImage/RosewoodGloss.png'
+import RoyalBlueGloss from './productImage/RoyalBlueGloss.png'
+import SatinOak from './productImage/SatinOak.png'
+import Secret from './productImage/Secret.png'
+import ShadowOak from './productImage/ShadowOak.png'
+import SiennaApplewood from './productImage/SiennaApplewood.png'
+import SilkenMaple from './productImage/SilkenMaple.png'
+import SolarOak from './productImage/SolarOak.png'
+import SpicedFruitwood from './productImage/SpicedFruitwood.png'
+import Tuxedo from './productImage/Tuxedo.png'
+import VanilaStix from './productImage/VanilaStix.png'
+import VerbeniaPear from './productImage/VerbeniaPear.png'
+import Walnut from './productImage/Walnut.png'
+import WarmWhite from './productImage/WarmWhite.png'
+import Weatheredpine from './productImage/Weatheredpine.png'
+import Wenge from './productImage/Wenge.png'
+import WhitePartuna from './productImage/WhitePartuna.png'
+
+import Laminate1 from './productImage/Laminate1.png'
+import Laminate2 from './productImage/Laminate2.png'
+import Laminate3 from './productImage/Laminate3.png'
+import Laminate4 from './productImage/Laminate4.png'
+import Laminate5 from './productImage/Laminate5.png'
+import Laminate6 from './productImage/Laminate6.png'
+
+import Fluted1 from './productImage/Fluted1.png'
+import Fluted2 from './productImage/Fluted2.png'
+import Fluted3 from './productImage/Fluted3.png'
+import Fluted4 from './productImage/Fluted4.png'
+import Fluted5 from './productImage/Fluted5.png'
+import Valance1 from './productImage/Valance1.png'
+import Valance2 from './productImage/Valance2.png'
+import Valance3 from './productImage/Valance3.png'
+import Valance4 from './productImage/Valance4.png'
+import handle1 from './productImage/handle1.jpg'
+import handle2 from './productImage/handle2.jpg'
+import handle3 from './productImage/handle3.jpg'
+import handle4 from './productImage/handle4.jpg'
+import handle5 from './productImage/handle5.png'
+import handle6 from './productImage/handle6.png'
+import handle7 from './productImage/handle7.png'
+import handle8 from './productImage/handle8.png'
+import handle9 from './productImage/handle9.png'
+
+
+import i1 from './image/background.jpg'
 
 export const productsData = [
     {
@@ -263,6 +355,7 @@ export const productsData = [
         "products": [
             {
                 "name": "Solid Wood",
+                "nameImg": i1,
                 "type": [
                     {
                         "typeName": "Standard Flat Panel Doors",
@@ -324,6 +417,7 @@ export const productsData = [
             },
             {
                 "name": "Vinyl",
+                "nameImg": i1,
                 "type": [
                     {
                         "typeName": "Vancouver",
@@ -671,6 +765,7 @@ export const productsData = [
         "products": [
             {
                 "name": "Quartz",
+                "nameImg": i1,
                 "type": [
                     {
                         "typeName": "Lucent Quartz",
@@ -1686,10 +1781,42 @@ export const productsData = [
             },
             {
                 "name": "Laminate",
+                "nameImg": i1,
                 "type": [
                     {
                         "typeName": "",
-                        "image": []
+                        "image": [
+                            {  
+                                "img": Laminate1,
+                                "alt": "VH - Laminate 1",
+                                "kind": ""
+                            },
+                            {  
+                                "img": Laminate2,
+                                "alt": "VH - Laminate 2",
+                                "kind": ""
+                            },
+                            {  
+                                "img": Laminate3,
+                                "alt": "VH - Laminate 3",
+                                "kind": ""
+                            },
+                            {  
+                                "img": Laminate4,
+                                "alt": "VH - Laminate 4",
+                                "kind": ""
+                            },
+                            {  
+                                "img": Laminate5,
+                                "alt": "VH - Laminate 5",
+                                "kind": ""
+                            },
+                            {  
+                                "img": Laminate6,
+                                "alt": "VH - Laminate 6",
+                                "kind": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -1701,10 +1828,327 @@ export const productsData = [
         "products": [
             {
                 "name": "",
+                
                 "type": [
                     {
                         "typeName": "",
-                        "image": []
+                        "image": [
+                            {
+                                "img": Abracadabra,
+                                "alt": "Abracadabra",
+                                "kind": ""
+                            },
+                            {
+                                "img": Almond,
+                                "alt": "Almond",
+                                "kind": ""
+                            },
+                            {
+                                "img": AmberWood,
+                                "alt": "Amber Wood",
+                                "kind": ""
+                            },
+                            {
+                                "img": AntiqueWhite,
+                                "alt": "Antique White",
+                                "kind": ""
+                            },
+                            {
+                                "img": Black,
+                                "alt": "Black",
+                                "kind": ""
+                            },
+                            {
+                                "img": BlackAsh,
+                                "alt": "Black Ash",
+                                "kind": ""
+                            },
+                            {
+                                "img": CandleLight,
+                                "alt": "Candle Light",
+                                "kind": ""
+                            },
+                            {
+                                "img": CarmelCherry,
+                                "alt": "Carmel Cherry",
+                                "kind": ""
+                            },
+                            {
+                                "img": CayenneMaple,
+                                "alt": "Cayenne Maple",
+                                "kind": ""
+                            },
+                            {
+                                "img": CeleryGloss,
+                                "alt": "Celery Gloss",
+                                "kind": ""
+                            },
+                            {
+                                "img": CherryPortuna,
+                                "alt": "Cherry Portuna",
+                                "kind": ""
+                            },
+                            {
+                                "img": ChocoCherry,
+                                "alt": "Choco Cherry",
+                                "kind": ""
+                            },
+                            {
+                                "img": ChocolatePear,
+                                "alt": "Chocolate Pear",
+                                "kind": ""
+                            },
+                            {
+                                "img": CopaCabana,
+                                "alt": "Copa Cabana",
+                                "kind": ""
+                            },
+                            {
+                                "img": CristalWhite,
+                                "alt": "Cristal White",
+                                "kind": ""
+                            },
+                            {
+                                "img": DarkCherry,
+                                "alt": "Dark Cherry",
+                                "kind": ""
+                            },
+                            {
+                                "img": DarkItalianWalnut,
+                                "alt": "Dark Italian Walnut",
+                                "kind": ""
+                            },
+                            {
+                                "img": DoveGrey,
+                                "alt": "Dove Grey",
+                                "kind": ""
+                            },
+                            {
+                                "img": GreyPortuna,
+                                "alt": "Grey Portuna",
+                                "kind": ""
+                            },
+                            {
+                                "img": HardRockMaple,
+                                "alt": "Hard Rock Maple",
+                                "kind": ""
+                            },
+                            {
+                                "img": HighGlossAntiqueWhite,
+                                "alt": "High Gloss Antique White",
+                                "kind": ""
+                            },
+                            {
+                                "img": HighGlossBirdseye,
+                                "alt": "High Gloss Birdseye",
+                                "kind": ""
+                            },
+                            {
+                                "img": HighGlossBlack,
+                                "alt": "High Gloss Black",
+                                "kind": ""
+                            },
+                            {
+                                "img": JavaGlow,
+                                "alt": "Java Glow",
+                                "kind": ""
+                            },
+                            {
+                                "img": LightBirdseye,
+                                "alt": "Light Birdseye",
+                                "kind": ""
+                            },
+                            {
+                                "img": LightZebranoGloss,
+                                "alt": "Light Zebrano",
+                                "kind": ""
+                            },
+                            {
+                                "img": MacassarEbony,
+                                "alt": "Macassar Ebony",
+                                "kind": ""
+                            },
+                            {
+                                "img": MaliWenge,
+                                "alt": "Mali Wenge",
+                                "kind": ""
+                            },
+                            {
+                                "img": MediumBirdseye,
+                                "alt": "Medium Birdseye",
+                                "kind": ""
+                            },
+                            {
+                                "img": MetallicCharcoal,
+                                "alt": "Metallic Charcoal",
+                                "kind": ""
+                            },
+                            {
+                                "img": MidnightGloss,
+                                "alt": "Midnight Gloss",
+                                "kind": ""
+                            },
+                            {
+                                "img": MochaGloss,
+                                "alt": "Mocha Gloss",
+                                "kind": ""
+                            },
+                            {
+                                "img": MovinguiGloss,
+                                "alt": "Movingui Gloss",
+                                "kind": ""
+                            },
+                            {
+                                "img": NaturalCherry,
+                                "alt": "Natural Cherry",
+                                "kind": ""
+                            },
+                            {
+                                "img": NaturalMaple,
+                                "alt": "Natural Maple",
+                                "kind": ""
+                            },
+                            {
+                                "img": Nutmeg,
+                                "alt": "Nutmeg",
+                                "kind": ""
+                            },
+                            {
+                                "img": OrangeGloss,
+                                "alt": "Orange Gloss",
+                                "kind": ""
+                            },
+                            {
+                                "img": OysterGrey,
+                                "alt": "Oyster Grey",
+                                "kind": ""
+                            },
+                            {
+                                "img": PalePalisander,
+                                "alt": "Pale Palisander",
+                                "kind": ""
+                            },
+                            {
+                                "img": PeacanWalnut,
+                                "alt": "Peacan Walnut",
+                                "kind": ""
+                            },
+                            {
+                                "img": Pearwood,
+                                "alt": "Pearwood",
+                                "kind": ""
+                            },
+                            {
+                                "img": PickledOak,
+                                "alt": "Pickle Oak",
+                                "kind": ""
+                            },
+                            {
+                                "img": PortMaple,
+                                "alt": "Port Maple",
+                                "kind": ""
+                            },
+                            {
+                                "img": Pumice,
+                                "alt": "Pumice",
+                                "kind": ""
+                            },
+                            {
+                                "img": RedGloss,
+                                "alt": "Red Gloss",
+                                "kind": ""
+                            },
+                            {
+                                "img": RiverCherry,
+                                "alt": "River Cherry",
+                                "kind": ""
+                            },
+                            {
+                                "img": RosewoodGloss,
+                                "alt": "Rosewood Gloss",
+                                "kind": ""
+                            },
+                            {
+                                "img": RoyalBlueGloss,
+                                "alt": "Royal Blue Gloss",
+                                "kind": ""
+                            },
+                            {
+                                "img": SatinOak,
+                                "alt": "Satin Oak",
+                                "kind": ""
+                            },
+                            {
+                                "img": Secret,
+                                "alt": "Secret",
+                                "kind": ""
+                            },
+                            {
+                                "img": ShadowOak,
+                                "alt": "Shadow Oak",
+                                "kind": ""
+                            },
+                            {
+                                "img": SiennaApplewood,
+                                "alt": "Sienna Applewood",
+                                "kind": ""
+                            },
+                            {
+                                "img": SilkenMaple,
+                                "alt": "Silken Maple",
+                                "kind": ""
+                            },
+                            {
+                                "img": SolarOak,
+                                "alt": "Solar Oak",
+                                "kind": ""
+                            },
+                            {
+                                "img": SpicedFruitwood,
+                                "alt": "Spiced Fruitwood",
+                                "kind": ""
+                            },
+                            {
+                                "img": Tuxedo,
+                                "alt": "Tuxedo",
+                                "kind": ""
+                            },
+                            {
+                                "img": VanilaStix,
+                                "alt": "Vanila Stix",
+                                "kind": ""
+                            },
+                            {
+                                "img": VerbeniaPear,
+                                "alt": "Verbenia Pear",
+                                "kind": ""
+                            },
+                            {
+                                "img": Walnut,
+                                "alt": "Walnut",
+                                "kind": ""
+                            },
+                            {
+                                "img": WarmWhite,
+                                "alt": "Warm White",
+                                "kind": ""
+                            },
+                            {
+                                "img": Weatheredpine,
+                                "alt": "Weathered pine",
+                                "kind": ""
+                            },
+                            {
+                                "img": Wenge,
+                                "alt": "Wenge",
+                                "kind": ""
+                            },
+                            {
+                                "img": WhitePartuna,
+                                "alt": "White Partuna",
+                                "kind": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -1716,10 +2160,107 @@ export const productsData = [
         "products": [
             {
                 "name": "",
+                
                 "type": [
                     {
                         "typeName": "",
-                        "image": []
+                        "image": [
+                            {
+                                "img": Fluted1,
+                                "alt": "Fluted Columns 1",
+                                "kind": ""
+                            },
+                            {
+                                "img": Fluted2,
+                                "alt": "Fluted Columns 2",
+                                "kind": ""
+                            },
+                            {
+                                "img": Fluted3,
+                                "alt": "Fluted Columns 3",
+                                "kind": ""
+                            },
+                            {
+                                "img": Fluted4,
+                                "alt": "Fluted Columns 4",
+                                "kind": ""
+                            },
+                            {
+                                "img": Fluted5,
+                                "alt": "Fluted Columns 5",
+                                "kind": ""
+                            },
+                            {
+                                "img": Valance1,
+                                "alt": "Window Valance 1",
+                                "kind": ""
+                            },
+                            {
+                                "img": Valance2,
+                                "alt": "Window Valance 2",
+                                "kind": ""
+                            },
+                            {
+                                "img": Valance3,
+                                "alt": "Window Valance 3",
+                                "kind": ""
+                            },
+                            {
+                                "img": Valance4,
+                                "alt": "Window Valance 4",
+                                "kind": ""
+                            }
+                        ]
+                    },
+                    {
+                        "typeName": "Handle & Knob",
+                        "image": [
+                            {
+                                "img": handle1,
+                                "alt": "",
+                                "kind": ""
+                            },
+                            {
+                                "img": handle2,
+                                "alt": "",
+                                "kind": ""
+                            },
+                            {
+                                "img": handle3,
+                                "alt": "",
+                                "kind": ""
+                            },
+                            {
+                                "img": handle4,
+                                "alt": "",
+                                "kind": ""
+                            },
+                            {
+                                "img": handle5,
+                                "alt": "",
+                                "kind": ""
+                            },
+                            {
+                                "img": handle6,
+                                "alt": "",
+                                "kind": ""
+                            },
+                            {
+                                "img": handle7,
+                                "alt": "",
+                                "kind": ""
+                            },
+                            {
+                                "img": handle8,
+                                "alt": "",
+                                "kind": ""
+                            },
+                            {
+                                "img": handle9,
+                                "alt": "",
+                                "kind": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -1731,6 +2272,7 @@ export const productsData = [
         "products": [
             {
                 "name": "",
+                
                 "type": [
                     {
                         "typeName": "",

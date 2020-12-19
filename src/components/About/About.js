@@ -16,8 +16,8 @@ const About = () => {
             <div className="about-1">
                 <div className="container1">
                     <div className="block1"></div>
-                    <img className="about-img2" src={aboutImg2} alt="aboutImg2"/>
-                    <img className="logo" src={logo} alt="logo"/>
+                    {/* <img className="about-img2" src={aboutImg2} alt="aboutImg2"/>
+                    <img className="logo" src={logo} alt="logo"/> */}
                 </div>
                 <div className="container2">
                     <h1>About Us</h1>
@@ -27,7 +27,7 @@ const About = () => {
             </div>
             <div className="about-2">
                 <div className="block2"></div>
-                <img className="about-img" src={aboutImg} alt="about"/>
+                {/* <img className="about-img" src={aboutImg} alt="about"/> */}
                 <img className="image2" src={smallVH} alt="SmallVHLogo"/>
             </div>
             <div className="about-3">

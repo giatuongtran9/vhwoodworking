@@ -6,7 +6,6 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import ProductPage from './components/Products/ProductPage/ProductPage'
-import Product from './components/Products/ProductPage/Product/Product';
 
 
 function App() {
@@ -17,6 +16,7 @@ function App() {
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
         <Route path="/product/:type/:productName" component={ProductPage}/>
+        <Route path="/product/:type" component={ProductPage}/>
       </Switch>
     </div>
   );

@@ -46,13 +46,13 @@
 h1 {
     color: #012B40;
     font-family: 'Brush Script MT', cursive;
-    font-size: 4rem;
+    font-size: 7rem;
     border-bottom: 5px solid #012B40;
     text-align: center;
 }
 
 p {
-    font-size: 12px;
+    font-size: 1.2rem;
     padding: 0 5px 5px 10px;
 }
 
@@ -76,6 +76,8 @@ p {
 
 .image2 {
     align-self: flex-end;
+    height: 300px;
+    width: 300px;
 }
 
 .block2 {
@@ -95,3 +97,18 @@ p {
     right: 10%;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .image2 {
+        height: 200px;
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

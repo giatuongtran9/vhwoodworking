@@ -26,8 +26,21 @@
     padding: 0 10px;
 }
 
+.p2-container {
+    height: 1000px;
+    width: 1000px;
+}
+
 .product-img {
     height: 300px;
     width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .p2-container {
+        height: 500px;
+        width: 450px;
+        object-fit: scale-down;
+    }
 }
 

@@ -13,7 +13,7 @@ const ProductPage = (props) => {
         <div className="productpage-container">
         <Nav />
             <div className="product-name">
-                <h2 className="productname">{a.productName}</h2>
+                <h2 className="productname">{a.productName ? a.productName : a.type}</h2>
             </div>
             <div>
                 <a className="product-link" href="#">Home</a>

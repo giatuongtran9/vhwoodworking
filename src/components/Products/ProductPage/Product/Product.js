@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import APIuRL from '../../../../api'
+import apiUrl from '../../../../api'
 
 import './Product.css'
 

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/vhwoodworking/static/css/main.9ffa4efc.chunk.css",
-    "main.js": "/vhwoodworking/static/js/main.95ef5598.chunk.js",
-    "main.js.map": "/vhwoodworking/static/js/main.95ef5598.chunk.js.map",
+    "main.js": "/vhwoodworking/static/js/main.931438fe.chunk.js",
+    "main.js.map": "/vhwoodworking/static/js/main.931438fe.chunk.js.map",
     "runtime-main.js": "/vhwoodworking/static/js/runtime-main.ca975059.js",
     "runtime-main.js.map": "/vhwoodworking/static/js/runtime-main.ca975059.js.map",
-    "static/js/2.26afbdfb.chunk.js": "/vhwoodworking/static/js/2.26afbdfb.chunk.js",
-    "static/js/2.26afbdfb.chunk.js.map": "/vhwoodworking/static/js/2.26afbdfb.chunk.js.map",
+    "static/js/2.bbc9bb98.chunk.js": "/vhwoodworking/static/js/2.bbc9bb98.chunk.js",
+    "static/js/2.bbc9bb98.chunk.js.map": "/vhwoodworking/static/js/2.bbc9bb98.chunk.js.map",
     "static/js/3.fffa58a0.chunk.js": "/vhwoodworking/static/js/3.fffa58a0.chunk.js",
     "static/js/3.fffa58a0.chunk.js.map": "/vhwoodworking/static/js/3.fffa58a0.chunk.js.map",
     "index.html": "/vhwoodworking/index.html",
     "static/css/main.9ffa4efc.chunk.css.map": "/vhwoodworking/static/css/main.9ffa4efc.chunk.css.map",
-    "static/js/2.26afbdfb.chunk.js.LICENSE.txt": "/vhwoodworking/static/js/2.26afbdfb.chunk.js.LICENSE.txt",
+    "static/js/2.bbc9bb98.chunk.js.LICENSE.txt": "/vhwoodworking/static/js/2.bbc9bb98.chunk.js.LICENSE.txt",
     "static/media/1.8673ff08.JPG": "/vhwoodworking/static/media/1.8673ff08.JPG",
     "static/media/123-01.c8ebf788.png": "/vhwoodworking/static/media/123-01.c8ebf788.png",
     "static/media/2.c1a84831.JPG": "/vhwoodworking/static/media/2.c1a84831.JPG",
@@ -226,8 +226,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ca975059.js",
-    "static/js/2.26afbdfb.chunk.js",
+    "static/js/2.bbc9bb98.chunk.js",
     "static/css/main.9ffa4efc.chunk.css",
-    "static/js/main.95ef5598.chunk.js"
+    "static/js/main.931438fe.chunk.js"
   ]
 }

@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/vhwoodworking/static/css/main.951dcaa6.chunk.css",
-    "main.js": "/vhwoodworking/static/js/main.3f6152be.chunk.js",
-    "main.js.map": "/vhwoodworking/static/js/main.3f6152be.chunk.js.map",
-    "runtime-main.js": "/vhwoodworking/static/js/runtime-main.bc4d9b79.js",
-    "runtime-main.js.map": "/vhwoodworking/static/js/runtime-main.bc4d9b79.js.map",
-    "static/js/2.3e90912b.chunk.js": "/vhwoodworking/static/js/2.3e90912b.chunk.js",
-    "static/js/2.3e90912b.chunk.js.map": "/vhwoodworking/static/js/2.3e90912b.chunk.js.map",
-    "static/js/3.712627bc.chunk.js": "/vhwoodworking/static/js/3.712627bc.chunk.js",
-    "static/js/3.712627bc.chunk.js.map": "/vhwoodworking/static/js/3.712627bc.chunk.js.map",
+    "main.css": "/vhwoodworking/static/css/main.9ffa4efc.chunk.css",
+    "main.js": "/vhwoodworking/static/js/main.b49b204f.chunk.js",
+    "main.js.map": "/vhwoodworking/static/js/main.b49b204f.chunk.js.map",
+    "runtime-main.js": "/vhwoodworking/static/js/runtime-main.ca975059.js",
+    "runtime-main.js.map": "/vhwoodworking/static/js/runtime-main.ca975059.js.map",
+    "static/js/2.26afbdfb.chunk.js": "/vhwoodworking/static/js/2.26afbdfb.chunk.js",
+    "static/js/2.26afbdfb.chunk.js.map": "/vhwoodworking/static/js/2.26afbdfb.chunk.js.map",
+    "static/js/3.fffa58a0.chunk.js": "/vhwoodworking/static/js/3.fffa58a0.chunk.js",
+    "static/js/3.fffa58a0.chunk.js.map": "/vhwoodworking/static/js/3.fffa58a0.chunk.js.map",
     "index.html": "/vhwoodworking/index.html",
-    "static/css/main.951dcaa6.chunk.css.map": "/vhwoodworking/static/css/main.951dcaa6.chunk.css.map",
-    "static/js/2.3e90912b.chunk.js.LICENSE.txt": "/vhwoodworking/static/js/2.3e90912b.chunk.js.LICENSE.txt",
-    "static/media/1-200x150-01.44f7fb49.png": "/vhwoodworking/static/media/1-200x150-01.44f7fb49.png",
+    "static/css/main.9ffa4efc.chunk.css.map": "/vhwoodworking/static/css/main.9ffa4efc.chunk.css.map",
+    "static/js/2.26afbdfb.chunk.js.LICENSE.txt": "/vhwoodworking/static/js/2.26afbdfb.chunk.js.LICENSE.txt",
     "static/media/1.8673ff08.JPG": "/vhwoodworking/static/media/1.8673ff08.JPG",
     "static/media/123-01.c8ebf788.png": "/vhwoodworking/static/media/123-01.c8ebf788.png",
-    "static/media/127x150.2bb39e6f.png": "/vhwoodworking/static/media/127x150.2bb39e6f.png",
     "static/media/2.c1a84831.JPG": "/vhwoodworking/static/media/2.c1a84831.JPG",
     "static/media/3.cd560e3b.jpg": "/vhwoodworking/static/media/3.cd560e3b.jpg",
     "static/media/4000.5bae2ef5.jpg": "/vhwoodworking/static/media/4000.5bae2ef5.jpg",
@@ -51,7 +49,6 @@
     "static/media/Grey-Light-GM116.89896990.jpeg": "/vhwoodworking/static/media/Grey-Light-GM116.89896990.jpeg",
     "static/media/Henegan.3658869b.jpg": "/vhwoodworking/static/media/Henegan.3658869b.jpg",
     "static/media/Hoboken.8354ad1b.jpg": "/vhwoodworking/static/media/Hoboken.8354ad1b.jpg",
-    "static/media/IMG_8007.3adda361.jpg": "/vhwoodworking/static/media/IMG_8007.3adda361.jpg",
     "static/media/Imperial-Brown-1822.6a38d419.jpg": "/vhwoodworking/static/media/Imperial-Brown-1822.6a38d419.jpg",
     "static/media/LQ1014-ABYSS.3e112c97.png": "/vhwoodworking/static/media/LQ1014-ABYSS.3e112c97.png",
     "static/media/LQ1015-Milky-Way.ab10b0c4.png": "/vhwoodworking/static/media/LQ1015-Milky-Way.ab10b0c4.png",
@@ -228,9 +225,9 @@
     "static/media/tce9002.37b9cfba.jpg": "/vhwoodworking/static/media/tce9002.37b9cfba.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bc4d9b79.js",
-    "static/js/2.3e90912b.chunk.js",
-    "static/css/main.951dcaa6.chunk.css",
-    "static/js/main.3f6152be.chunk.js"
+    "static/js/runtime-main.ca975059.js",
+    "static/js/2.26afbdfb.chunk.js",
+    "static/css/main.9ffa4efc.chunk.css",
+    "static/js/main.b49b204f.chunk.js"
   ]
 }

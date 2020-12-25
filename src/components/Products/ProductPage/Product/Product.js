@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import apiUrl from '../../../../api'
+import APIuRL from '../../../../api'
 
 import './Product.css'
 
@@ -16,6 +16,7 @@ const Product = (props) => {
         axios.get(url)
         .then(res => setData(res.data))
     }, [])
+
     console.log(url)
     console.log(data)
 

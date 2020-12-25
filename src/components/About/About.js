@@ -2,9 +2,9 @@ import React from 'react'
 
 import './About.css'
 import smallVH from '../../image/123-01.png'
-import aboutImg from '../../image/IMG_8007.jpg'
-import aboutImg2 from '../../image/1-200x150-01.png'
-import logo from '../../image/127x150.png'
+// import aboutImg from '../../image/IMG_8007.jpg'
+// import aboutImg2 from '../../image/1-200x150-01.png'
+// import logo from '../../image/127x150.png'
 
 import Nav from '../Nav/Nav'
 

@@ -11,7 +11,7 @@ const ProductList = (props) => {
     const data = productsData.map((product) => {
         return (
             <div className="list-container">
-                <Link to={`/product/${product.productName}`} onClick={() =>  props.isShow(false)} className="product-h1">{product.productName}</Link>
+                <Link to={`/product/${product.productName}`} onClick={() =>  props.isShow(false)} className={`${product.productName === 'Door' || product.productName === 'Counter Top' ? 'product-h1-a' : 'product-h1'}`}>{product.productName}</Link>
                 {product.products.map((p) => {
                     return (
                         <ul>

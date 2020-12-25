@@ -26,7 +26,7 @@ class Home extends React.Component {
             <div className="home-container">
                 <Nav />
                <div className="home-upper">
-                   <img src={home} alt="VH"/>
+                   <img className="VH" src={home} alt="VH"/>
                    
                </div>
                <div className="home-lower">

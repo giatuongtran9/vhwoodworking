@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 import './Contact.css'
 import VH from '../../image/500-01.png'
@@ -8,19 +8,6 @@ import Nav from '../Nav/Nav'
 
 const Contact = () => {
 
-    const [data, setData] = useState(null)
-
-    const getProduct = () => {
-        fetch('http://localhost:8000/products/')
-        .then(res => res.json())
-        .then(result => setData(result))
-    }
-
-    useEffect(() => {
-        getProduct()
-    }, [])
-
-    console.log(data)
     return (
         <div>
             <Nav />

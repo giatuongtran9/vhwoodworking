@@ -7,14 +7,15 @@ import './Product.css'
 
 const Product = (props) => {
     const q = props.name.split(" ").join("%20")
-    const url = `${apiUrl}/product/${props.productName}/${q}`
+    const q1 = props.productName.split(" ").join("%20")
+    const url = `${apiUrl}/product/${q1}/${q}`
     const [data, setData] = useState()
 
     useEffect(() => {
         console.log("Get called with", url)
         axios.get(url)
         .then(res => setData(res.data))
-    }, [])
+    }, [url])
 
     console.log(url)
     console.log(data)

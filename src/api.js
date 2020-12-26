@@ -1,4 +1,4 @@
-const apiUrl = 'https://vhwoodworking.herokuapp.com'
+const apiUrl = 'https://vhwoodworking-server.herokuapp.com'
 
 // const config = {
 //     apiUrl: apiUrl,

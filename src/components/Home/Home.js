@@ -4,8 +4,6 @@ import './Home.css'
 import Nav from '../Nav/Nav'
 
 import SlideImage from './SlideImage/SlideImage'
-import VH from '../../image/123-01.png'
-import ava from '../../image/450x300-01.png'
 import i1 from '../../image/1.JPG'
 import i2 from '../../image/2.JPG'
 import i3 from '../../image/3.jpg'

@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Nav.css'
 
 import NavItem from './NavItem/NavItem'
-import Products from '../Products/Products'
 
 const Nav = () => {
-
-    const [show, setShow] = useState(false)
 
         return (
             <div className="nav-container">

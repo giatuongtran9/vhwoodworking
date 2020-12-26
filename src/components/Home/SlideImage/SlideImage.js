@@ -9,7 +9,6 @@ const SlideImage = (props) => {
 
     const [index, setIndex] = useState(0)
     const [active, setActive] = useState(false)
-    const dot = []
 
     const nextSlide = () => {
         setIndex((index + 1)% props.images.length)

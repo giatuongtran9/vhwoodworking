@@ -4,8 +4,6 @@ import apiUrl from '../../../../api'
 
 import './Product.css'
 
-import { Link } from 'react-router-dom'
-
 
 const Product = (props) => {
     const q = props.name.split(" ").join("%20")
@@ -13,9 +11,9 @@ const Product = (props) => {
     const [data, setData] = useState()
 
     useEffect(() => {
+        console.log("Get called with", url)
         axios.get(url)
         .then(res => setData(res.data))
-        console.log("Get called with", url)
     }, [])
 
     console.log(url)

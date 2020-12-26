@@ -15,6 +15,7 @@ const Product = (props) => {
     useEffect(() => {
         axios.get(url)
         .then(res => setData(res.data))
+        console.log("Get called with", url)
     }, [])
 
     console.log(url)

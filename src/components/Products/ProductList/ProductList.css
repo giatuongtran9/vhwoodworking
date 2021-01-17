@@ -15,6 +15,7 @@ li {
     padding-top: 5%;
     border: 1px solid white;
     position: relative;
+    margin-top: 30px;
 }
 
 .list-container {
@@ -22,14 +23,13 @@ li {
 }
 
 .product-h1 {
-    font-family: 'Brush Script MT', cursive;
+
     padding: 0 30px;
     color: white;
     font-size: 5rem;
 }
 
 .product-h1-a {
-    font-family: 'Brush Script MT', cursive;
     padding: 0 30px;
     color: white;
     font-size: 5rem;

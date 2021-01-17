@@ -5,8 +5,6 @@ import apiUrl from '../../api'
 
 const Form = () => {
 
-    const url = `${apiUrl}/products`
-
     const [data, setData] = useState([{}])
 
     const [state, setState] = useState({
@@ -19,11 +17,14 @@ const Form = () => {
     })
 
     useEffect(() => {
-        axios.get(url).then(res => setData(res.data))
-    }, [])
+        axios.get(apiUrl + '/products').then(res => setData(res.data))
+    }, [state])
+
+    console.log(data)
 
     const createProduct = (newProduct) => {
-        const url2 = `${apiUrl}/product/${state.productName}/${state.name}`
+        // const url2 = `${apiUrl}/product/${state.productName}/${state.name}`
+        const url2 = `${apiUrl}/${state.productName}/${state.name}`
         console.log(url2)
         axios.post(url2, newProduct)
         .then((res) => console.log(res))
@@ -67,6 +68,7 @@ const Form = () => {
                 Name:
                 <select name="name" onChange={handleChange} value={state.name}>
                     {b}
+                    <option></option>
                 </select>
 
             </label>

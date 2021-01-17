@@ -1,6 +1,7 @@
 .navitem-container {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .nav {
@@ -17,6 +18,12 @@ a {
     text-decoration: none;
     margin: 0 20px;
     font-family: cursive;
+}
+
+.logout {
+    width: 30px;
+    height: 30px;
+    color: white;
 }
 
 .a1:hover {

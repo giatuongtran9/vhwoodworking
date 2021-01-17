@@ -7,6 +7,10 @@ import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import ProductPage from './components/Products/ProductPage/ProductPage'
 import Form from './components/Form/Form'
+import SignUp from './components/SignUp/SignUp'
+import SignIn from './components/SignIn/SignIn'
+import Comments from './components/Comment/Comment'
+
 
 function App() {
   return (
@@ -17,6 +21,10 @@ function App() {
         <Route path="/contact" component={Contact} exact/>
         <Route path="/product/:productName/:name" component={ProductPage} exact/>
         <Route path="/addform" component={Form} exact/>
+        <Route path="/signup" component={SignUp}/>
+        <Route path="/signin" component={SignIn}/>
+        <Route path="/comment" component={Comments}/>
+        <Route render={ () => <h1>404 Error</h1>}/>
       </Switch>
     </div>
   );

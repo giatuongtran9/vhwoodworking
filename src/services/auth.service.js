@@ -21,7 +21,7 @@ import apiUrl from '../api.js'
             'Content-Type': 'application/json'
         }
         return axios
-                .post('http://localhost:8000' + '/auth/signup', info, {headers: headers})
+                .post(apiUrl + '/auth/signup', info, {headers: headers})
     }
 
     export const logout = () => {

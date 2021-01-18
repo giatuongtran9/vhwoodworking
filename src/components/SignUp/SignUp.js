@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 import {signup} from '../../services/auth.service' 
 
 const SignUp = () => {
@@ -27,6 +28,17 @@ const SignUp = () => {
         }
     
         return errors
+    }
+
+    const createUser = (newUser) => {
+        const headers = {
+            'Content-Type': 'application/json'
+        }
+        // const url2 = `${apiUrl}/product/${state.productName}/${state.name}`
+        const url2 = `http://localhost:8000/auth/signup`
+
+        axios.post(url2, newUser, {headers: headers})
+
     }
 
     const handleChange = (e) => {

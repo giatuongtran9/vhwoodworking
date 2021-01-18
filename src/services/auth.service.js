@@ -16,14 +16,12 @@ import apiUrl from '../api.js'
                 })
     }
 
-    export const signup = (username, password) => {
+    export const signup = (info) => {
         const headers = {
             'Content-Type': 'application/json'
         }
         return axios
-                .post(apiUrl + '/auth/signup', {
-                    username, password
-                }, {headers: headers})
+                .post('http://localhost:8000' + '/auth/signup', info, {headers: headers})
     }
 
     export const logout = () => {

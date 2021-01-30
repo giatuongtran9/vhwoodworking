@@ -20,9 +20,24 @@ const NavItem = () => {
 
     const [d, setD] = useState([])
 
+    const [size, setSize] = useState(undefined)
+
+
     useEffect(() => {
         axios.get(url).then(res => setD(res.data))
+
+        const handleResize = () => {
+            setSize(window.innerWidth)
+        }
+
+        window.addEventListener('resize', handleResize)
+
+        handleResize()
+
+        return () => window.removeEventListener('resize', setSize(window.innerWidth))
     }, [])
+
+    
 
     const data = d.map((product) => {
         return (
@@ -59,40 +74,8 @@ const NavItem = () => {
     )
 
     return (
-        // <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-        //     <div className="container-fluid">
-        //         <Link className="navbar-brand" to="/">Logo</Link>
-        //         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        //             <span class="navbar-toggler-icon"></span>
-        //         </button>
-        //         <div className="collapse navbar-collapse" id="navbarContent">    
-        //             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        //                 <li className="nav-item">
-        //                     <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <Link className="nav-link active a1" aria-current="page" to="/about">About Us</Link>
-        //                 </li>
-        //                 <li className="nav-item dropdown">
-        //                     <a className="nav-link dropdown-toggle active" id="productsDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" href="#" role="button">Products</a>
-        //                     <ul className="dropdown-menu" aria-labelledby="productsDropdown">
-        //                         <a class="dropdown-item" href="#">Action</a>
-        //                         <a class="dropdown-item" href="#">Another action</a>
-        //                     </ul>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <Link className="nav-link active" aria-current="page" to="/contact">Contact Us</Link>
-        //                 </li>
-        //             </ul>
-
-        //             <span class="navbar-text">
-        //                 {auth}
-        //             </span>
-                
-        //         </div>
-        //     </div>
-        // </nav>
-
+        
+        <div> 
         <Navbar collapseOnSelect expand="lg" fixed="top" style={{ backgroundColor: '#2C1405'}} variant="dark">
             <Navbar.Brand href="/">Logo</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
@@ -100,17 +83,24 @@ const NavItem = () => {
             <Nav className="mr-auto">
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/about">About Us</Nav.Link>
-                <NavDropdown title="Products" id="responsive-navbar-nav" style={{ backgroundColor: '#2C1405'}}>
+                {/* <NavDropdown title="Products" id="responsive-navbar-nav" style={{ backgroundColor: '#2C1405'}}>
                     {data}
-                </NavDropdown>
+                </NavDropdown> */}
+                {window.innerWidth > 992 ? (<Nav.Link href="#" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>Products</Nav.Link>) : 
+                    <NavDropdown title="Products" id="responsive-navbar-nav" style={{ backgroundColor: '#2C1405'}}>
+                        {data}
+                    </NavDropdown> 
+                }
                 <Nav.Link href="/contact">Contact Us</Nav.Link>
             </Nav>
             <Nav>
                 {auth}
-                
+                <h1 className="a1">{size}</h1>
             </Nav>
             </Navbar.Collapse>
         </Navbar>
+            {show ? (<Products isShow={setShow}/>) : null}
+        </div>
     )
 }
 

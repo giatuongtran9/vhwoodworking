@@ -24,7 +24,7 @@ const Form = () => {
 
     const createProduct = (newProduct) => {
         // const url2 = `${apiUrl}/product/${state.productName}/${state.name}`
-        const url2 = `${apiUrl}/${state.productName}/${state.name}`
+        const url2 = `${apiUrl}/product/${state.productName}/${state.name}`
         console.log(url2)
         axios.post(url2, newProduct)
         .then((res) => console.log(res))

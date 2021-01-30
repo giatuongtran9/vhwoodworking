@@ -1,0 +1,13 @@
+.card-container.card {
+    max-width: 500px !important;
+    padding: 40px 40px;
+}
+
+.col-md-12 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+
+ 

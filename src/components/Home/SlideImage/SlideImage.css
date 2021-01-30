@@ -1,7 +1,7 @@
 .slideImg {
     height: 100%;
     width: 100%;
-    border: 10px solid #2C1405;
+    /* border: 2px solid #2C1405; */
 }
 
 .slider {
@@ -57,6 +57,12 @@
     transition: background-color 0.6s ease;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .slider {
+        min-width: 480px;
+    }
+}
 
 
 

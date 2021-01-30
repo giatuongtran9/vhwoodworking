@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import './SignIn.css'
 
 import {login} from '../../services/auth.service' 
 
@@ -7,24 +8,12 @@ const SignIn = (props) => {
     const history = useHistory()
     const [state, setState] = useState({
         name: "",
-        password: "",
+        password: ""
     })
 
-    const [errors, setErrors] = useState({})
+    const [mess, setMess] = useState('')
 
-    const validate = (value) => {
-        const errors = {}
 
-        if (!value.name) {
-            errors.user = 'Username is required!'
-        }
-
-        if (!value.password) {
-            errors.pass = 'Password is required!'
-        }
-    
-        return errors
-    }
 
 
     const handleChange = (e) => {
@@ -37,38 +26,44 @@ const SignIn = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        const validationErrors = validate(state)
-        const noErr = Object.keys(validationErrors).length === 0
-        setErrors(validationErrors)
-        if (noErr) {
-            login(state.name, state.password).then(() => {
+        login(state.name, state.password).then(() => {
                 history.push("/");
                 window.location.reload();
+            }, error => {
+                const resMess = error.response.data.errors
+                setMess(resMess)
             })
-        } else {
-            console.log("errors try again",validationErrors);
-        }
+
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <div className="col-md-12">
+            <div className="card card-container">
+            <form onSubmit={handleSubmit}>
             <h1>Sign In</h1>
+            <div className="form-group">
             <label>
                 Name:
-                <input type="text" name="name" value={state.name} onChange={handleChange}/>
             </label>
             <br/>
-            {errors.user}
+                <input type="text" name="name" value={state.name} onChange={handleChange} required/>
+            </div>
+
             <br/>
+            <div className="form-group">
             <label>
                 Password:
-                <input type="password" name="password" value={state.password} onChange={handleChange}/>
             </label>
             <br/>
-            {errors.pass}
+                <input type="password" name="password" value={state.password} onChange={handleChange} required/>
+            </div>
+            {mess && <div className="alert alert-danger">{mess}</div>}
+            
             <br/>
-            <button type="submit">Sign In</button>
+            <button className="btn btn-primary btn-block" type="submit">Sign In</button>
         </form>
+            </div>
+        </div>
     )
 }
 

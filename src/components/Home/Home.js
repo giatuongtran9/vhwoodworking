@@ -35,7 +35,7 @@ class Home extends React.Component {
                </div>
 
             </div>
-            <Comment />
+            {/* <Comment /> */}
             </div>
         )
     }

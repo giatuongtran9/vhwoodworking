@@ -2,6 +2,7 @@
     background-image: url('../../image/background-01.png');
     height: auto;
     min-height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     z-index: -10;
@@ -12,13 +13,10 @@
 }
 
 .home-container {
-
-    height: auto;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
 }
 
 img {
@@ -27,24 +25,26 @@ img {
     object-fit: contain;
 }
 
+.VH {
+    min-width: 490px;
+}
+
 .home-upper {
-    float: left;
+    /* float: left; */
     position: relative;
     display: flex;
     width: 50%;
     align-items: center;
-    margin-right: 2%;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .home-lower {
-    float: left;
+    /* float: left; */
     width: 50%;
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: 15vh;
-    margin-right: 2%;
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -66,15 +66,6 @@ img {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .VH {
-        min-height: 600px;
-    }
-
-    .home-container {
-        flex-direction: column;
-    }
-}
 
 /* @media only screen and (min-width: 601px) {
     .VH {

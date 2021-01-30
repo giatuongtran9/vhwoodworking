@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import axios from 'axios'
 import {signup} from '../../services/auth.service' 
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
     const [state, setState] = useState({
@@ -8,38 +8,8 @@ const SignUp = () => {
         password: "",
     })
 
-    const [errors, setErrors] = useState({})
-
-    const validate = (value) => {
-        const errors = {}
-
-        if (!value.name) {
-            errors.user = 'Username is required!'
-        }
-        else if (value.name.length < 3 || value.name.length > 20) {
-            errors.user = 'Username must between 3 and 20 characters'
-        }
-
-        if (!value.password) {
-            errors.pass = 'Password is required!'
-        }
-        else if (value.password.length < 3 || value.password.length > 40) {
-            errors.pass = 'Password must between 3 and 40 characters'
-        }
-    
-        return errors
-    }
-
-    const createUser = (newUser) => {
-        const headers = {
-            'Content-Type': 'application/json'
-        }
-        // const url2 = `${apiUrl}/product/${state.productName}/${state.name}`
-        const url2 = `http://localhost:8000/auth/signup`
-
-        axios.post(url2, newUser, {headers: headers})
-
-    }
+    const [mess, setMess] = useState('')
+    const [success, setSuccess] = useState(false)
 
     const handleChange = (e) => {
         setState({
@@ -51,36 +21,51 @@ const SignUp = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        const validationErrors = validate(state)
-        const noErr = Object.keys(validationErrors).length === 0
-        setErrors(validationErrors)
-        if (noErr) {
-            console.log("Authenticated", state)
-            signup(state)
-        } else {
-            console.log("errors try again",validationErrors);
-        }
+        signup(state).then(response => {
+            setMess(response.data.message)
+            setSuccess(true)
+        }, error => {
+            setMess(error.response.data.errors)
+            setSuccess(false)
+        })
+
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <div className="col-md-12">
+            <div className="card card-container">
+            <form onSubmit={handleSubmit}>
             <h1>Sign Up</h1>
+            <div className="form-group">
             <label>
                 Name:
-                <input type="text" name="name" value={state.name} onChange={handleChange}/>
             </label>
             <br/>
-            {errors.user}
+            <input type="text" name="name" value={state.name} onChange={handleChange} required/>
+            
+            </div>
             <br/>
+            <div className="form-group">
             <label>
                 Password:
-                <input type="password" name="password" value={state.password} onChange={handleChange}/>
             </label>
             <br/>
-            {errors.pass}
+            <input type="password" name="password" value={state.password} onChange={handleChange} required/>
+            
+            </div>
+
+            {mess && (
+                <div className="form-group">
+                    <div className={success ? "alert alert-success" : "alert alert-danger"} role="alert">{mess}</div>
+                </div>
+            )}
             <br/>
-            <button type="submit">Create</button>
+            <button className="btn btn-primary btn-block" type="submit">Sign Up</button>
+            <br/>
+            <Link to="/signin">Click here to Sign In</Link>
         </form>
+            </div>
+        </div>
     )
 }
 

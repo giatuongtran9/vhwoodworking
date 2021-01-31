@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/vhwoodworking/static/css/main.616cfaa3.chunk.css",
-    "main.js": "/vhwoodworking/static/js/main.8b065d62.chunk.js",
-    "main.js.map": "/vhwoodworking/static/js/main.8b065d62.chunk.js.map",
+    "main.css": "/vhwoodworking/static/css/main.31d046f0.chunk.css",
+    "main.js": "/vhwoodworking/static/js/main.7b8881e1.chunk.js",
+    "main.js.map": "/vhwoodworking/static/js/main.7b8881e1.chunk.js.map",
     "runtime-main.js": "/vhwoodworking/static/js/runtime-main.e22d9777.js",
     "runtime-main.js.map": "/vhwoodworking/static/js/runtime-main.e22d9777.js.map",
     "static/css/2.1a02f21c.chunk.css": "/vhwoodworking/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.ca87987e.chunk.js": "/vhwoodworking/static/js/2.ca87987e.chunk.js",
-    "static/js/2.ca87987e.chunk.js.map": "/vhwoodworking/static/js/2.ca87987e.chunk.js.map",
+    "static/js/2.b366e6e7.chunk.js": "/vhwoodworking/static/js/2.b366e6e7.chunk.js",
+    "static/js/2.b366e6e7.chunk.js.map": "/vhwoodworking/static/js/2.b366e6e7.chunk.js.map",
     "static/js/3.a532163a.chunk.js": "/vhwoodworking/static/js/3.a532163a.chunk.js",
     "static/js/3.a532163a.chunk.js.map": "/vhwoodworking/static/js/3.a532163a.chunk.js.map",
     "index.html": "/vhwoodworking/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/vhwoodworking/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.616cfaa3.chunk.css.map": "/vhwoodworking/static/css/main.616cfaa3.chunk.css.map",
-    "static/js/2.ca87987e.chunk.js.LICENSE.txt": "/vhwoodworking/static/js/2.ca87987e.chunk.js.LICENSE.txt",
+    "static/css/main.31d046f0.chunk.css.map": "/vhwoodworking/static/css/main.31d046f0.chunk.css.map",
+    "static/js/2.b366e6e7.chunk.js.LICENSE.txt": "/vhwoodworking/static/js/2.b366e6e7.chunk.js.LICENSE.txt",
     "static/media/1.8673ff08.JPG": "/vhwoodworking/static/media/1.8673ff08.JPG",
     "static/media/123-01.c8ebf788.png": "/vhwoodworking/static/media/123-01.c8ebf788.png",
     "static/media/2.c1a84831.JPG": "/vhwoodworking/static/media/2.c1a84831.JPG",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.e22d9777.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.ca87987e.chunk.js",
-    "static/css/main.616cfaa3.chunk.css",
-    "static/js/main.8b065d62.chunk.js"
+    "static/js/2.b366e6e7.chunk.js",
+    "static/css/main.31d046f0.chunk.css",
+    "static/js/main.7b8881e1.chunk.js"
   ]
 }

@@ -100,7 +100,6 @@ const Form = () => {
 
             <button type="submit">Add</button>
         </form>
-        <Footer/>
         </div>
     )
 }

@@ -2,6 +2,7 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
 
+import Nav from './components/Nav/Nav'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
@@ -15,6 +16,7 @@ import Comments from './components/Comment/Comment'
 function App() {
   return (
     <div>
+      <Nav/>
       <Switch>
         <Route path="/" component={Home}/>
         <Route path="/about" component={About}/>

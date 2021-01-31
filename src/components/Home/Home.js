@@ -29,7 +29,6 @@ class Home extends React.Component {
             <Nav />
                <div className="home-upper">
                    <img className="VH" src={home} alt="VH"/>
-                   
                </div>
                <div className="home-lower">
                     <SlideImage images={this.state.images}/>

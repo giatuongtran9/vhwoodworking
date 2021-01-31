@@ -31,7 +31,7 @@ const NavItem = () => {
         }
 
         window.addEventListener('resize', handleResize)
-
+        console.log(process.env.PUBLIC_URL)
         handleResize()
 
         return () => window.removeEventListener('resize', setSize(window.innerWidth))

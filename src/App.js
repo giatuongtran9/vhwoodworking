@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
 import Home from './components/Home/Home'
 import About from './components/About/About'
@@ -15,7 +15,7 @@ import Comments from './components/Comment/Comment'
 function App() {
   return (
     <div>
-      <Switch>
+      <HashRouter>
         <Route path='/' component={Home} exact/>
         <Route path='/about' component={About} exact/>
         <Route path="/contact" component={Contact} exact/>
@@ -25,7 +25,7 @@ function App() {
         <Route path="/signin" component={SignIn}/>
         <Route path="/comment" component={Comments}/>
         <Route render={ () => <h1>404 Error</h1>}/>
-      </Switch>
+      </HashRouter>
     </div>
   );
 }

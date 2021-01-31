@@ -48,7 +48,7 @@ const Comment = () => {
         <div className="comment-container">
             {comments}
             {user !== null ? <form onSubmit={handleSubmit}>
-                <textarea className="text-area" value={input} onChange={handleChange}/>
+                <textarea placeholder="Leave comment here" className="text-area" value={input} onChange={handleChange}/>
                 <button type="submit">Add</button>
             </form> : ''}
         </div>

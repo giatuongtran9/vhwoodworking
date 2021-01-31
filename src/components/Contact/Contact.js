@@ -1,15 +1,16 @@
 import React from 'react'
 
 import './Contact.css'
-import VH from '../../image/500-01.png'
+import VH from '../../image/400-01.png'
 import contactImg from '../../image/500x450-01.png'
 
 import Nav from '../Nav/Nav'
+import Footer from '../Footer/Footer'
 
 const Contact = () => {
 
     return (
-        <div>
+        <div className="contact-1">
             <Nav />
         <div className="contact-container">
             <div className="contact1">
@@ -31,6 +32,7 @@ const Contact = () => {
                 <img src={VH} alt="VH"/>
             </div>
         </div>
+        <Footer/>
         </div>
     )
 }

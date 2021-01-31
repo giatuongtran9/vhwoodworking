@@ -2,15 +2,13 @@ import React from 'react'
 
 import './About.css'
 import smallVH from '../../image/123-01.png'
-// import aboutImg from '../../image/IMG_8007.jpg'
-// import aboutImg2 from '../../image/1-200x150-01.png'
-// import logo from '../../image/127x150.png'
 
+import Footer from '../Footer/Footer'
 import Nav from '../Nav/Nav'
 
 const About = () => {
     return (
-        <div>
+        <div className="about1">
             <Nav />
         <div className="about-container">
             <div className="about-1">
@@ -35,6 +33,7 @@ const About = () => {
                 <p>We also have wide selections of all colors, patterns and textures. We offer competitive pricing, greate customer service and treated our clients with professionalism and care. Our clients have expressed their satisfaction with the quality of our products can craftmanship.</p>
             </div>
         </div>
+        <Footer/>
         </div>
     )
 }

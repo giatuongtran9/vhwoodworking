@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {signup} from '../../services/auth.service' 
 import { Link } from 'react-router-dom'
 
+
 const SignUp = () => {
     const [state, setState] = useState({
         name: "",

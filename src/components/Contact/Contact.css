@@ -1,8 +1,14 @@
 .contact-container {
+    height: 100%;
+    display: flex;
+}
+
+.contact-1 {
     background-image: url('../../image/background-01.png');
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column
 }
 
 .contact1 {
@@ -44,11 +50,10 @@ li {
 
 
 .contact3 {
-    width: 10%;
+    width: 10%;  
+    margin-top: 5%;
     display: flex;
     justify-content: center;
-    align-items: center;
-
 }
 
 @media only screen and (min-width: 992px) {

@@ -70,7 +70,7 @@ const NavItem = () => {
         </Link>
         </>
         :
-        ''
+        <Link to="/signin" className="a1">Sign In</Link>
     )
 
     return (

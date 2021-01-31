@@ -3,6 +3,8 @@ import ReactFile from 'react-file-base64'
 import axios from 'axios'
 import apiUrl from '../../api'
 
+import Footer from '../Footer/Footer'
+
 const Form = () => {
 
     const [data, setData] = useState([{}])
@@ -98,6 +100,7 @@ const Form = () => {
 
             <button type="submit">Add</button>
         </form>
+        <Footer/>
         </div>
     )
 }

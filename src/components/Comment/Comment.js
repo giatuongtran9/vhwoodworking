@@ -18,25 +18,24 @@ const Comment = () => {
         .then(res => setText(res.data))
     }, [update])
 
-    const handleDelete = userId => {
-        axios.delete(apiUrl + `/auth/comment/${userId}`)
+    const handleDelete = id => {
+        axios.delete(apiUrl + `/auth/comment/${id}`)
         .then(res => {
             console.log(res)
             console.log(res.data)
-
-            const updateText = text.filter(i => i.user._id !== userId)
-            setText(updateText)
+            setText(text.filter(i => i._id !== id))
         })
     }
 
     const comments = text.map((comment) => {
         return <div className="card text-white bg-dark" style={{width: '50vw'}}>
-                    <div className="card-header">
-                        <a href="#" onClick={() => handleDelete(comment.user._id)}><img className="remove-icon" src={removeIcon} img="removeIcon"/></a>
-                    </div>
+                    {user !== null && user.role === 'admin' ? <div className="card-header">
+                        <a onClick={() => handleDelete(comment._id)}><img className="remove-icon" src={removeIcon} img="removeIcon"/></a>
+                    </div> : ''}
                     <div className="card-body">
                         <blockquote className="blockquote mb-0">
                             <p>{comment.text}.</p>
+                            <p>{comment._id}</p>
                             <footer className="blockquote-footer">Posted on {comment.date} by <cite title="Source Title">{comment.user.name}</cite></footer>
                         </blockquote>
                     </div>
@@ -49,15 +48,19 @@ const Comment = () => {
 
     const addComment = i => {
         axios.post(apiUrl + '/auth/comment', i)
-        .then(res => console.log)
+        .then(res => {
+            console.log(res)
+            setUpdate(!update)
+            setInput('')
+        })
         .catch(err => console.log(err))
     }
 
     const handleSubmit = e => {
         e.preventDefault()
         addComment({text: input, userId: user.id})
-        setUpdate(!update)
     }
+
 
     return (
         <div className="comment-container">

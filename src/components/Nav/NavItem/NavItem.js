@@ -16,6 +16,8 @@ const NavItem = () => {
 
     const [show, setShow] = useState(false)    
 
+    const [sth, setSth] = useState(false)
+
     const url = `${apiUrl}/products`
 
     const [d, setD] = useState([])
@@ -37,7 +39,9 @@ const NavItem = () => {
         return () => window.removeEventListener('resize', setSize(window.innerWidth))
     }, [])
 
-    
+    const handleClick = () => {
+        logout()
+    }
 
     const data = d.map((product) => {
         return (
@@ -65,7 +69,7 @@ const NavItem = () => {
     const auth = (state !== null ?
         <>
         <h3 className="a1">Hello {state.name}</h3>
-        <Link to="/signin" onClick={logout}>
+        <Link to="/signin" onClick={handleClick}>
             <img src={LogOut} className="logout" alt="Logout"/>
         </Link>
         </>

@@ -3,6 +3,7 @@ import './Comment.css'
 import axios from 'axios'
 import {getcurrentUser } from '../../services/auth.service'
 import apiUrl from '../../api.js'
+import removeIcon from '../../image/delete.png'
 
 const Comment = () => {
 
@@ -17,8 +18,22 @@ const Comment = () => {
         .then(res => setText(res.data))
     }, [update])
 
+    const handleDelete = userId => {
+        axios.delete(apiUrl + `/auth/comment/${userId}`)
+        .then(res => {
+            console.log(res)
+            console.log(res.data)
+
+            const updateText = text.filter(i => i.user._id !== userId)
+            setText(updateText)
+        })
+    }
+
     const comments = text.map((comment) => {
         return <div className="card text-white bg-dark" style={{width: '50vw'}}>
+                    <div className="card-header">
+                        <a href="#" onClick={() => handleDelete(comment.user._id)}><img className="remove-icon" src={removeIcon} img="removeIcon"/></a>
+                    </div>
                     <div className="card-body">
                         <blockquote className="blockquote mb-0">
                             <p>{comment.text}.</p>

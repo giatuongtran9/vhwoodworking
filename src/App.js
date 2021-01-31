@@ -15,8 +15,7 @@ import Comments from './components/Comment/Comment'
 function App() {
   return (
     <div>
-      <HashRouter>
-        <Switch>
+      <Switch>
         <Route path='/' component={Home} exact/>
         <Route path='/about' component={About} exact/>
         <Route path="/contact" component={Contact} exact/>
@@ -26,8 +25,7 @@ function App() {
         <Route path="/signin" component={SignIn}/>
         <Route path="/comment" component={Comments}/>
         <Route render={ () => <h1>404 Error</h1>}/>
-        </Switch>
-      </HashRouter>
+      </Switch>
     </div>
   );
 }

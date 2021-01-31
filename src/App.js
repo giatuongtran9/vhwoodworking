@@ -1,6 +1,6 @@
 
 import './App.css';
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 import Home from './components/Home/Home'
 import About from './components/About/About'
@@ -16,9 +16,9 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route path='/' component={Home} exact/>
-        <Route path='/about' component={About} exact/>
-        <Route path="/contact" component={Contact} exact/>
+        <Route path='/' component={Home}/>
+        <Route path='/about' component={About}/>
+        <Route path="/contact" component={Contact}/>
         <Route path="/product/:productName/:name" component={ProductPage} exact/>
         <Route path="/addform" component={Form} exact/>
         <Route path="/signup" component={SignUp}/>

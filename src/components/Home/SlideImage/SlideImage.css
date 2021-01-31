@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-
 }
 
 .prev, .next {
@@ -63,6 +62,14 @@
         min-width: 480px;
     }
 }
+
+@media only screen and (min-width: 601px) {
+    .slider {
+        min-width: 600px;
+    }
+}
+
+
 
 
 

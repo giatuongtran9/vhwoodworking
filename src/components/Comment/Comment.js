@@ -47,10 +47,10 @@ const Comment = () => {
     return (
         <div className="comment-container">
             {comments}
-            <form onSubmit={handleSubmit}>
-                <textarea value={input} onChange={handleChange}/>
+            {user !== null ? <form onSubmit={handleSubmit}>
+                <textarea className="text-area" value={input} onChange={handleChange}/>
                 <button type="submit">Add</button>
-            </form>
+            </form> : ''}
         </div>
     )
 }

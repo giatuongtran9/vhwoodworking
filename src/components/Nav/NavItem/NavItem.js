@@ -62,7 +62,7 @@ const NavItem = () => {
         )
     })
 
-    const auth = (state.name !== null ?
+    const auth = (state !== null ?
         <>
         <h3 className="a1">Hello {state.name}</h3>
         <Link to="/signin" onClick={logout}>

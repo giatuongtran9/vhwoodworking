@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 
 import Nav from '../Nav/Nav'
+import Footer from '../Footer/Footer'
 
 import SlideImage from './SlideImage/SlideImage'
 import i1 from '../../image/1.JPG'
@@ -25,7 +26,7 @@ class Home extends React.Component {
         return (
             <div className="page-container">
             <div className="home-container">
-                <Nav />
+            <Nav />
                <div className="home-upper">
                    <img className="VH" src={home} alt="VH"/>
                    
@@ -35,7 +36,8 @@ class Home extends React.Component {
                </div>
 
             </div>
-            {/* <Comment /> */}
+            <Comment />
+            <Footer />
             </div>
         )
     }

@@ -18,14 +18,14 @@ function App() {
     <div>
       <Nav/>
       <Switch>
-        <Route path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/contact" component={Contact}/>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/contact" component={Contact}/>
         <Route path="/product/:productName/:name" component={ProductPage} exact/>
-        <Route path="/addform" component={Form} exact/>
-        <Route path="/signup" component={SignUp}/>
-        <Route path="/signin" component={SignIn}/>
-        <Route path="/comment" component={Comments}/>
+        <Route exact path="/addform" component={Form} exact/>
+        <Route exact path="/signup" component={SignUp}/>
+        <Route exact path="/signin" component={SignIn}/>
+        <Route exact path="/comment" component={Comments}/>
         <Route render={ () => <h1>404 Error</h1>}/>
       </Switch>
     </div>

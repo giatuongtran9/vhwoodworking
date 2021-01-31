@@ -16,8 +16,8 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route path={process.env.PUBLIC_URL + '/'} component={Home} exact/>
-        <Route path={process.env.PUBLIC_URL + '/about'} component={About} exact/>
+        <Route path='/' component={Home} exact/>
+        <Route path='/about' component={About} exact/>
         <Route path="/contact" component={Contact} exact/>
         <Route path="/product/:productName/:name" component={ProductPage} exact/>
         <Route path="/addform" component={Form} exact/>

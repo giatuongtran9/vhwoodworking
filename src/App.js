@@ -16,8 +16,8 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route path='/' component={Home}/>
-        <Route path='/about' component={About}/>
+        <Route path="/" component={Home}/>
+        <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
         <Route path="/product/:productName/:name" component={ProductPage} exact/>
         <Route path="/addform" component={Form} exact/>

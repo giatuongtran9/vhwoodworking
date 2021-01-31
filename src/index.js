@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter, BrowserRouter } from 'react-router-dom'
 import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <App />
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 

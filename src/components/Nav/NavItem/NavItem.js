@@ -81,8 +81,8 @@ const NavItem = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-                <Link to="/">Home</Link>
-                <Link to="/about">About Us</Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/about">About Us</Nav.Link>
                 {/* <NavDropdown title="Products" id="responsive-navbar-nav" style={{ backgroundColor: '#2C1405'}}>
                     {data}
                 </NavDropdown> */}

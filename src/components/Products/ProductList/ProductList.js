@@ -44,7 +44,7 @@ const ProductList = (props) => {
     })
 
     return (
-        <div className="product-list" onMouseEnter={() => props.isShow(true)} onMouseLeave={() => props.isShow(false)} >
+        <div className="product-list"  >
             {user && user.role === 'admin' ? <Link to="/addform" className="product-h1">Add Product</Link> : ''}
             {data}
         </div>

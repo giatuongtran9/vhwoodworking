@@ -76,7 +76,7 @@ const NavItem = () => {
         :
         <Link to="/signin" className="a1">Sign In</Link>
     )
-
+        // <Nav.Link href="#" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>Products</Nav.Link>
     return (
         
         <div> 
@@ -90,7 +90,7 @@ const NavItem = () => {
                 {/* <NavDropdown title="Products" id="responsive-navbar-nav" style={{ backgroundColor: '#2C1405'}}>
                     {data}
                 </NavDropdown> */}
-                {window.innerWidth > 992 ? (<Nav.Link href="#" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>Products</Nav.Link>) : 
+                {window.innerWidth > 992 ? (<Nav.Link href="#" onClick={() => setShow(true)}>Products</Nav.Link>) : 
                     <NavDropdown title="Products" id="responsive-navbar-nav" style={{ backgroundColor: '#2C1405'}}>
                         {data}
                     </NavDropdown> 

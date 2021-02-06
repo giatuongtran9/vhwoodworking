@@ -2,6 +2,7 @@
     background-image: url('../../image/background-01.png');
     height: auto;
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     z-index: -10;
@@ -24,9 +25,6 @@ img {
     object-fit: contain;
 }
 
-.VH {
-    width: 490px;
-}
 
 .home-upper {
     /* float: left; */
@@ -44,7 +42,6 @@ img {
     display: flex;
     align-items: center;
     margin-top: 5%;
-    margin-right: 30px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -55,7 +52,14 @@ img {
 
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1200px)
+{
+    .VH {
+        height: 1000px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
     .home-upper {
         margin-top: 5vh;
     }
@@ -63,10 +67,16 @@ img {
     .home-lower {
         margin-top: 5vh;
     }
+
+    .VH {
+        height: 800px;
+    }
 }
 
-@media only screen and (max-width: 992px) {
-
+@media only screen and (max-width: 600px) {
+    .VH {
+        width: 480px;
+    }
 }
 
 @media only screen and (min-width: 601px) {

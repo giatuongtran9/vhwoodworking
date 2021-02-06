@@ -2,6 +2,7 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
 
+import Footer from './components/Footer/Footer'
 import Nav from './components/Nav/Nav'
 import Home from './components/Home/Home'
 import About from './components/About/About'
@@ -16,7 +17,6 @@ import Comments from './components/Comment/Comment'
 function App() {
   return (
     <div>
-      <Nav/>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>

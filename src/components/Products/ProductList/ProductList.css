@@ -26,13 +26,13 @@ li {
 
     padding: 0 30px;
     color: white;
-    font-size: 5rem;
+    font-size: 1rem;
 }
 
 .product-h1-a {
     padding: 0 30px;
     color: white;
-    font-size: 5rem;
+    font-size: 1rem;
     pointer-events: none;
 }
 
@@ -59,7 +59,7 @@ li {
 }
 
 @media only screen and (max-width: 600px) {
-    .product-h1 {
+    /* .product-h1 {
         
         font-size: 1rem;
     }
@@ -67,7 +67,7 @@ li {
     .product-h1-a {
         
         font-size: 1rem;
-    }
+    } */
 
     .product-list {
         width: 100%;

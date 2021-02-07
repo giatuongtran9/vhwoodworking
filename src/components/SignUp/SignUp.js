@@ -25,6 +25,10 @@ const SignUp = () => {
         signup(state).then(response => {
             setMess(response.data.message)
             setSuccess(true)
+            setState({
+                name: '',
+                password: ''
+            })
         }, error => {
             setMess(error.response.data.errors)
             setSuccess(false)

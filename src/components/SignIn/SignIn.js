@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import './SignIn.css'
-
+import { Link } from 'react-router-dom'
 
 import {login} from '../../services/auth.service' 
 
@@ -61,6 +61,7 @@ const SignIn = (props) => {
             {mess && <div className="alert alert-danger">{mess}</div>}
             
             <br/>
+            <div className="alert alert-info"><Link to="/signup">Don't have an account? <br/> Click here to Sign Up</Link></div>
             <button className="btn btn-primary btn-block" type="submit">Sign In</button>
         </form>
             </div>

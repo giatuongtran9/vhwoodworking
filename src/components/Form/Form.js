@@ -3,7 +3,6 @@ import ReactFile from 'react-file-base64'
 import axios from 'axios'
 import apiUrl from '../../api'
 
-import Footer from '../Footer/Footer'
 
 const Form = () => {
 
@@ -18,6 +17,8 @@ const Form = () => {
         kind: ""
     })
 
+    const [mess, setMess] = useState('')
+
     useEffect(() => {
         axios.get(apiUrl + '/products').then(res => setData(res.data))
     }, [state])
@@ -25,11 +26,24 @@ const Form = () => {
     console.log(data)
 
     const createProduct = (newProduct) => {
-        // const url2 = `${apiUrl}/product/${state.productName}/${state.name}`
+        const headers = {
+            'Content-Type': 'application/json'
+        }
         const url2 = `${apiUrl}/product/${state.productName}/${state.name}`
         console.log(url2)
-        axios.post(url2, newProduct)
-        .then((res) => console.log(res))
+        axios.post(url2, newProduct, {headers: headers})
+        .then((res) => {
+            console.log(res)
+            setState({
+                productName: "",
+                name: "",
+                typeName: "",
+                img: "",
+                alt: "",
+                kind: ""
+            })
+            setMess(res.data.message)
+        })
         .catch((err) => console.log(err))
     }
     
@@ -97,7 +111,12 @@ const Form = () => {
                     onDone={({ base64 }) => setState({...state, img: base64 })}
                 />
             </div>
-
+            <br/>
+            {mess ?? (
+                <div className="form-group">
+                    <div className="alert alert-success" role="alert">{mess}</div>
+                </div>
+            )}
             <button type="submit">Add</button>
         </form>
         </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ReactFile from 'react-file-base64'
 import axios from 'axios'
 import apiUrl from '../../api'
-
+import { Link } from 'react-router-dom'
 
 const Form = () => {
 
@@ -119,6 +119,9 @@ const Form = () => {
             )}
             <br/>
             <button type="submit">Add</button>
+            <br/>
+            <br/>
+            <Link to='/'>Go back to home page</Link>
         </form>
         </div>
     )

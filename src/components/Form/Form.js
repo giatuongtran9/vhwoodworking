@@ -114,9 +114,10 @@ const Form = () => {
             <br/>
             {mess ?? (
                 <div className="form-group">
-                    <div className="alert alert-success" role="alert">{mess}</div>
+                    <div className="alert alert-success">{mess}</div>
                 </div>
             )}
+            <br/>
             <button type="submit">Add</button>
         </form>
         </div>

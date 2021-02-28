@@ -97,10 +97,10 @@ const NavItem = () => {
                 }
                 <Nav.Link href="/contact">Contact Us</Nav.Link>
             </Nav>
-            {/* <Nav>
+            <Nav>
                 {auth}
-                <h1 className="a1">{size}</h1>
-            </Nav> */}
+                {/* <h1 className="a1">{size}</h1> */}
+            </Nav>
             </Navbar.Collapse>
         </Navbar>
             {show ? (<Products isShow={setShow}/>) : null}

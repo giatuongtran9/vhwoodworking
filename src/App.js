@@ -35,13 +35,7 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/" render={() => {
-          if (isLogged()) {
-            return <Home />
-          } else {
-            return <Redirect to='/signin'/>
-          }
-        }}/>
+        <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/contact" component={Contact}/>
         <Route path="/product/:productName/:name" component={ProductPage} exact/>
